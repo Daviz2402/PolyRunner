@@ -1,0 +1,50 @@
+[package]
+name = "polyrunner"
+version = "0.2.0"
+authors = ["Daviz2402"]
+edition = "2024"
+description = "A powerful, multi-pane TUI application for managing, running, and monitoring local projects and services."
+repository = "https://github.com/Daviz2402/PolyRunner"
+homepage = "https://github.com/Daviz2402/PolyRunner"
+license = "MIT"
+keywords = ["tui", "runner", "manager", "workspace", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+exclude = [
+    "target/*",
+    "Demo/**/node_modules/*",
+    "Demo/**/target/*",
+    "assets/*",
+    "*.txt",
+    ".github/*",
+]
+
+
+[[bin]]
+name = "polyrunner"
+path = "src/main.rs"
+
+
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+dirs = "5"
+sysinfo = "0.33"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls"] }
+strip-ansi-escapes = "0.2.1"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["fileapi"] }
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
+
+
+# End of file
+
