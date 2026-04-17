@@ -1,6 +1,6 @@
 [package]
 name = "polyrunner"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Daviz2402"]
 edition = "2024"
 description = "A powerful, multi-pane TUI application for managing, running, and monitoring local projects and services."
@@ -13,7 +13,8 @@ exclude = [
     "target/*",
     "Demo/**/node_modules/*",
     "Demo/**/target/*",
-    "assets/*",
+    "assets/Fullscreen.JPG",
+    "assets/Windowed.JPG",
     "*.txt",
     ".github/*",
 ]

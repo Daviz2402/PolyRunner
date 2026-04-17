@@ -2,7 +2,7 @@
 
 [![Rust](https://img.shields.io/badge/rust-2024-red.svg?logo=rust)](https://www.rust-lang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](https://github.com/Daviz2402/PolyRunner/releases)
+[![Version](https://img.shields.io/badge/version-0.2.1-blue.svg)](https://github.com/Daviz2402/PolyRunner/releases)
 
 **PolyRunner** is a professional, high-performance **Multi-Pane TUI** project manager and service monitor built in Rust. Supervise, run, and explore your entire workspace from a single interactive dashboard.
 
@@ -32,8 +32,8 @@ Choose your preferred method:
 
 | Platform / Manager | Command |
 | :--- | :--- |
-| **Linux & macOS** | `curl -LsSf https://github.com/Daviz2402/PolyRunner/releases/download/v0.2.0/polyrunner-installer.sh | sh` |
-| **Windows (PS)** | `irm https://github.com/Daviz2402/PolyRunner/releases/download/v0.2.0/polyrunner-installer.ps1 | iex` |
+| **Linux & macOS** | `curl -LsSf https://github.com/Daviz2402/PolyRunner/releases/download/v0.2.1/polyrunner-installer.sh | sh` |
+| **Windows (PS)** | `irm https://github.com/Daviz2402/PolyRunner/releases/download/v0.2.1/polyrunner-installer.ps1 | iex` |
 | **Bun / Node** | `bun x polyrunner@latest` |
 | **Cargo (Rust)** | `cargo install polyrunner` |
 
