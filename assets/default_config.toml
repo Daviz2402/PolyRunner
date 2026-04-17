@@ -1,0 +1,51 @@
+[general]
+exclude_drives = []
+custom_paths = []
+log_persistence = false
+favorites = []
+theme = "default"
+
+[keybindings]
+up = "up"
+down = "down"
+enter = "enter"
+back = "left"
+run = "r"
+stop = "x"
+settings = "k"
+favorite = "f"
+quit = "q"
+toggle_layout = "l"
+toggle_sidebar = "s"
+toggle_split = "o"
+next_pane = "shift-right"
+prev_pane = "shift-left"
+expand_left = "alt-left"
+expand_right = "alt-right"
+expand_up = "alt-up"
+expand_down = "alt-down"
+clear_log = "c"
+cycle_log_view = "v"
+export_log = "e"
+toggle_selection = " "
+layout_panel = "l"
+hide_panel = "h"
+filter = "/"
+master = "m"
+reset = "l"
+item_up = "up"
+item_down = "down"
+item_enter = "enter"
+item_back = "left"
+
+[layout]
+show_logs = true
+show_running = true
+show_disks = true
+show_explorer = true
+
+[layout.tree.Split]
+dir = "Horizontal"
+ratio = 50
+a = { Split = { dir = "Vertical", ratio = 60, a = { Pane = "Explorer" }, b = { Split = { dir = "Vertical", ratio = 50, a = { Pane = "Favorites" }, b = { Pane = "Sidebar" } } } } }
+b = { Split = { dir = "Vertical", ratio = 50, a = { Pane = "Logs" }, b = { Pane = "Running" } } }

@@ -1,0 +1,13 @@
+{
+  "name": "polyrunner",
+  "version": "0.2.0",
+  "description": "TUI microservice manager",
+  "scripts": {
+    "dev": "cargo run",
+    "build": "cargo build --release",
+    "start": "cargo run --release"
+  },
+  "dependencies": {
+    "polyrunner": "^0.1.3"
+  }
+}
